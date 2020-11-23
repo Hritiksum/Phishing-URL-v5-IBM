@@ -1,16 +1,31 @@
-# Malicious-Urlv5
-Malicious-Urlv5.
+# Malicious-URL-Detector
 
-**TECH STACK**
+[![Concept Video](https://img.youtube.com/vi/-6fd996HWrQ/0.jpg)](https://www.youtube.com/watch?v=-6fd996HWrQ)
 
-Python, Django(Framework), IBM cloudant database, IBM cloud (for deployment), Data science, Machine learning
 
-This application is live at : https://mudv7.eu-gb.cf.appdomain.cloud/
-Data Searched through application is : https://mudv7.eu-gb.cf.appdomain.cloud/geturlhistory
+** YouTube demo link : https://youtu.be/-6fd996HWrQ
+
+1. This application is live at : https://mudvfinalradar.eu-gb.cf.appdomain.cloud/
+
+2. Live Data Analysis Portal : https://mudvfinalradar.eu-gb.cf.appdomain.cloud/fetchanalysis
+
+3. Chrome Extension repository : https://github.com/abhisheksaxena1998/ChromeExtension-Malicious-URL-v5-IBM
+
+4. Dataset link : https://github.com/Hritiksum/MUD_dataset
+
+5. Training and Testing link : https://github.com/Hritiksum/MUD_dataset/blob/master/Training%20and%20Testing%20Model/Training%20and%20Testing.ipynb
 
 Life is dependent mainly on internet in todays life for moving business online, or making online transactions. Resulting in cyber-thefts and cyber-frauds increasing exponentially day by day, leading to compromised security and infiltration of hackers or third parties while transacting online.
+*******
+## Notable Results: Twitter Bitcoin Scam (Detected successfully by our Data Science/Machine Learning solution – Malicious URL Detector.)
 
-## Test Data
+On July 15, 2020, between 20:00 and 22:00 UTC, around 130 high-profile Twitter accounts were compromised by outside parties to promote a bitcoin scam. Twitter and other media sources confirmed that the perpetrators had gained access to Twitter's administrative tools so that they could alter the accounts themselves and post the tweets directly. They appeared to have used social engineering to gain access to the tools via Twitter employees.
+
+Compromised accounts included those of well-known individuals such as <strong>Barack Obama, Joe Biden, Bill Gates, Jeff Bezos, MrBeast, Michael Bloomberg, Warren Buffett, Floyd Mayweather, Kim Kardashian, and Kanye West; and companies such as Apple, Uber, and Cash App</strong>.
+*******
+### Link to implemented detailed Case Study: https://mudvfinalradar.eu-gb.cf.appdomain.cloud/casestudy
+*******
+# Test Data
 
 Test URL | Result (Target)
 ------------ | -------------
@@ -26,6 +41,65 @@ https://www.google.com/ | Legitimate
 https://wallpapersite.com/abstract/ | Legitimate
 https://www.freepik.com/free-vector | Legitimate
 
+## This project is deployed on IBM Cloud Foundry
+
+### Link to Malicious URL Detector Anti-Phishing solution:
+https://mudvfinalradar.eu-gb.cf.appdomain.cloud/
+
+    Note : While using Malicious URL Detector web application on a browser protected by Malicious URL Detector browser extension, the web application might take sometime to load, as the REST API endpoint is called through JavaScript in Chrome Extension and at this instant Cloudant database is updated too, since we are using LITE plan of Cloudant Database there are limited writes available. If these requests exceed number of writes availabe for robust functioning of application these are queued, which leads to slowness. 
+
+1.	Type a valid URL for example to fetch analysis:
+    
+    https://www2.deloitte.com/in/en.html
+    
+    ![How to install](/Images/img9.png)
+    
+    ![How to install](/Images/img91.png)
+    
+    ![How to install](/Images/img92.png)
+    
+    
+2.	Another example of Legitimate URL
+
+    https://technoutsav.techgig.com/
+    
+    ![How to install](/Images/img8.png)
+    
+    ![How to install](/Images/img81.png)
+    
+    ![How to install](/Images/img82.png)
+    
+3.	Another Legitimate URL
+
+    https://www.mi.com
+
+    This is an example of Legitimate URL.
+    
+    ![How to install](/Images/img7.png)
+    
+    ![How to install](/Images/img71.png)
+    
+    ![How to install](/Images/img72.png)
+    
+4.	Example of Malicious Website
+
+    https://promo-twitter.info
+    
+    ![How to install](/Images/img10.png)
+    
+    ![How to install](/Images/img101.png)
+    
+    ![How to install](/Images/img102.png)
+    
+5.	Another Malicious URL
+
+    https://home-paypal-jp.moonkahonda.com/panel_JP/-/jp/xppl/
+    
+    ![How to install](/Images/img11.png)
+    
+    ![How to install](/Images/img111.png)
+    
+    ![How to install](/Images/img112.png)
 
 ## Installation Guide
 
@@ -54,43 +128,3 @@ https://www.freepik.com/free-vector | Legitimate
 
     ![How to install](/Images/img6.png)
     
-8.	Type a valid URL for example to fetch analysis:
-
-    https://www.mi.com
-
-    This is an example of Legitimate URL.
-    
-    ![How to install](/Images/img7.png)
-    
-9.	Another example of Legitimate URL
-
-    https://technoutsav.techgig.com/
-    
-    ![How to install](/Images/img8.png)
-    
-10.	Another Legitimate URL
-
-    https://www2.deloitte.com/in/en.html
-    
-    ![How to install](/Images/img9.png)
-    
-11.	Example of Malicious Website
-
-    http://www.dhilloncraneservice.com/.well-known/bankofamerica.com/
-    
-    ![How to install](/Images/img10.png)
-    
-12.	Another Malicious URL
-
-    https://home-paypal-jp.moonkahonda.com/panel_JP/-/jp/xppl/
-    
-    ![How to install](/Images/img11.png)
-    
-    
-    
-    
-    
-    
-    
-    
-  
